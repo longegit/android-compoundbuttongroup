@@ -249,6 +249,7 @@ public class CompoundButtonGroup extends ScrollView {
         int fixNum = ((keyList.size() + numCols - 1) / numCols) * numCols - keyList.size();
         for (int i=0; i<fixNum; i++) {
             FullWidthCompoundButton hiddenBtn = buildEntry("hidden", "hidden");
+            hiddenBtn.setVisibility(INVISIBLE);
             hiddenBtn.setClickable(false);
             colContainer.addView(hiddenBtn);
         }
