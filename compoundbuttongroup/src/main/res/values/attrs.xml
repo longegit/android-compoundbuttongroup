@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CompoundButtonGroup">
+        <attr name="entries" format="reference" />
+        <attr name="numCols" format="integer" />
+        <attr name="labelOrder" format="enum">
+            <enum name="before" value="0" />
+            <enum name="after" value="1" />
+        </attr>
+        <attr name="compoundType" format="enum">
+            <enum name="check_box" value="0" />
+            <enum name="radio" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
