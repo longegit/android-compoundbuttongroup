@@ -92,7 +92,10 @@ public class CompoundButtonGroup extends ScrollView {
 
             numCols = a.getInteger(R.styleable.CompoundButtonGroup_numCols, 1);
 
-            setEntries(a.getTextArray(R.styleable.CompoundButtonGroup_entries));
+            CharSequence[] entryArray = a.getTextArray(R.styleable.CompoundButtonGroup_entries);
+            if (entryArray != null) {
+                setEntries(entryArray);
+            }
             if (entries != null) {
                 reDraw();
             }
